@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg_member.css">
+    <script src="reg_member.js"></script>
+</head>
+<body>
+    <form>
+    <input id="id" type="text" minlength="6" maxlength="12" required placeholder="아이디(6자리이상,12자리이하)">
+    <br>
+    <input id="pw" type="password" minlength="4" maxlength="12" required placeholder="비밀번호(6자리이상,12자리이하)">
+    <br>
+    <input id="re_pw" type="password" minlength="4" maxlength="12" required placeholder="비밀번호재입력(6자리이상,12자리이하)">
+    <br>
+    <input id="userName" type="text"  minlength="2" maxlength="12" placeholder="이름">
+    <br>
+    <input id="email" type="email" minlength="10" maxlength="20" placeholder="이메일"><br>
+    <input id="year" type="text"  placeholder="생년" >년
+
+    <select id="bir_m" class="birth_m">		
+    <option value="1">월</option>	
+    <option value="2">1</option>	
+    <option value="3">2</option>	
+    <option value="4">3</option>	
+    <option value="5">4</option>	
+    <option value="6">5</option>	
+    <option value="7">6</option>	
+    <option value="8">7</option>	
+    <option value="9">8</option>	
+    <option value="10">9</option>	
+    <option value="11">10</option>	
+    <option value="12">11</option>	
+    <option value="13">12</option>	
+    </select>
+
+    <select id="bir_d" class="birth_d">		
+        <option value="1">일</option>	
+        <option value="2">1</option>	
+        <option value="3">2</option>	
+        <option value="4">3</option>	
+        <option value="5">4</option>	
+        <option value="6">5</option>	
+        <option value="7">6</option>	
+        <option value="8">7</option>	
+        <option value="9">8</option>	
+        <option value="10">9</option>	
+        <option value="11">10</option>	
+        <option value="12">11</option>	
+        <option value="13">12</option>	
+        <option value="14">13</option>	
+        <option value="15">14</option>	
+        <option value="16">15</option>	
+        <option value="17">16</option>	
+        <option value="18">17</option>	
+        <option value="19">18</option>	
+        <option value="20">19</option>	
+        <option value="21">20</option>	
+        <option value="22">21</option>	
+        <option value="23">22</option>	
+        <option value="24">23</option>	
+        <option value="25">24</option>	
+        <option value="26">25</option>	
+        <option value="27">26</option>	
+        <option value="28">27</option>	
+        <option value="29">28</option>	
+        <option value="30">29</option>	
+        <option value="31">30</option>	
+        <option value="32">31</option>	
+        </select>
+        <br>
+        <input type="radio" name="sex" value="M"> 남성			
+        <input type="radio" name="sex" value="G" >여성
+        <br>
+
+        핸드폰번호<br>
+        <input id="phone1" type="tel" minlength="3" maxlength="3" placeholder="010" >-
+        <input id="phone2" type="tel" minlength="4" maxlength="4" placeholder="0000" >-
+        <input id="phone3" type="tel" minlength="4" maxlength="4" placeholder="0000" >
+        <br>
+        <input id="sign_up" type="submit" value="회원가입" onclick="check();">
+    </form>
+
+</body>
+</html>
+
